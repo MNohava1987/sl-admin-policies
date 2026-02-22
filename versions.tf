@@ -4,7 +4,7 @@ terraform {
 
   required_providers {
     spacelift = {
-      source  = "spacelift-io/spacelift"
+      source = "spacelift-io/spacelift"
       # Pin to provider minor for predictable behavior.
       version = "~> 1.44"
     }

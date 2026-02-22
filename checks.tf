@@ -20,3 +20,10 @@ check "deletion_protection_flag_boolean" {
     error_message = "settings.enable_deletion_protection must be boolean."
   }
 }
+
+check "destructive_changes_require_repave_mode" {
+  assert {
+    condition     = local.cfg_enable_deletion_protection || var.repave_mode
+    error_message = "Disabling deletion protection requires repave_mode=true for explicit operator intent."
+  }
+}
