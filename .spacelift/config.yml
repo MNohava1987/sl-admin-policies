@@ -1,0 +1,5 @@
+stack:
+  before_init:
+    - terraform fmt -check -recursive
+  before_plan:
+    - ./scripts/assurance-gate.sh

@@ -1,4 +1,2 @@
-# This repository is reserved for Tier 2 policies (guardrails).
-# Account-wide laws are managed in sl-root-bootstrap.
-
-# Placeholder for future guardrails (e.g. naming conventions, cost controls).
+# Component is manifest-driven. Resource implementation is intentionally deferred.
+# This repository currently enforces contracts and pipeline assurance only.

@@ -1,0 +1,5 @@
+manifest_version: "1"
+
+settings:
+  enable_component: true
+  enable_deletion_protection: true

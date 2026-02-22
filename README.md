@@ -1,10 +1,13 @@
 # sl-admin-policies
 
-Baseline governance policies + attachments.
+This repository follows the same assurance standard as `sl-root-bootstrap`.
 
-Design intent:
-- Attach baselines at **parent spaces** (inheritance).
-- Use labels for exceptions.
-- Keep policy source + tests in-repo.
+## Current Scope
 
-This is a minimal example policy; replace with your real policy set.
+- Manifest-driven settings in `manifests/policies-config.yaml`.
+- Contract checks in `checks.tf`.
+- Assurance gates via `scripts/assurance-gate.sh`.
+
+## Local Validation
+
+`./scripts/assurance-gate.sh`

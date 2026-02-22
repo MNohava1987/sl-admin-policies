@@ -1,14 +1,17 @@
-variable "spacelift_api_key_id" {
-  type      = string
-  sensitive = true
+variable "supported_manifest_versions" {
+  type        = list(string)
+  default     = ["1"]
+  description = "Allowed manifest schema versions."
 }
 
-variable "spacelift_api_key_secret" {
-  type      = string
-  sensitive = true
+variable "enable_component" {
+  type        = bool
+  default     = true
+  description = "Global feature flag for this component."
 }
 
-variable "baseline_space_ids" {
-  type    = list(string)
-  default = []
+variable "enable_deletion_protection" {
+  type        = bool
+  default     = true
+  description = "DANGER: If false, managed resources may be deleted. Keep true for normal operations."
 }
